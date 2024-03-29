@@ -1,6 +1,6 @@
 # Programming Project
 
-Context
+# Context
 Every four years, FIFA celebrates the FIFA World Cup for men's senior teams. It's a highly anticipated event that captures the attention of people worldwide. This year, the World Cup is being held in Qatar. To learn more about the Qatar 2022 World Cup, visit https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022.  For regulations, visit https://digitalhub.fifa.com/m/3e8de757aac56c6b/original/dc7szy6nllfz06qgz2ry-pdf.pdf.
 
 A popular tradition alongside the World Cup is the "World Cup pool" played among friends and family.
