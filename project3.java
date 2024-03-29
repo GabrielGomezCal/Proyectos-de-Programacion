@@ -1,5 +1,5 @@
 /*
-Gabriel Gómez Calderón
+Gabriel GÃ³mez CalderÃ³n
 Johan Stiven Gonzalez Rativa
 Omar Enrique Vivas Eyrich
  */
@@ -44,10 +44,10 @@ public class project3 {
                                 {9, 16, 3, 2}, {13, 12, 3, 1}, {7, 4, 2, 1}, {17, 24, 3, 1}, {25, 31, 1, 0}, {21, 20, 2, 3}, {29, 27, 1, 1},
                                 {24, 25, 3, 3}, {3, 9, 1, 2}, {21, 29, 3, 0}, {13, 4, 1, 2}, {25, 9, 2, 2}, {4, 21, 2, 2}, {25, 21, 1, 0}, {9, 4, 2, 1}}};
 
-        String[] selecciones = {"Qatar", "Ecuador", "Senegal", "Países Bajos", "Inglaterra", "Irán", "EEUU", "Gales",
-                "Argentina", "Arabia Saudí", "México", "Polonia", "Francia", "Dinamarca", "Túnez", "Australia", "España",
-                "Alemania", "Japón", "Costa Rica", "Bélgica", "Canadá", "Marruecos", "Croacia", "Brasil", "Serbia", "Suiza",
-                "Camerún", "Portugal", "Ghana", "Uruguay", "Corea del Sur"};
+        String[] selecciones = {"Qatar", "Ecuador", "Senegal", "PaÃ­ses Bajos", "Inglaterra", "IrÃ¡n", "EEUU", "Gales",
+                "Argentina", "Arabia SaudÃ­", "MÃ©xico", "Polonia", "Francia", "Dinamarca", "TÃºnez", "Australia", "EspaÃ±a",
+                "Alemania", "JapÃ³n", "Costa Rica", "BÃ©lgica", "CanadÃ¡", "Marruecos", "Croacia", "Brasil", "Serbia", "Suiza",
+                "CamerÃºn", "Portugal", "Ghana", "Uruguay", "Corea del Sur"};
 
         short[] resultado = calcular_puntajes_todos(marcadores);
 
@@ -308,7 +308,8 @@ public class project3 {
             repetido[0]= 3;
         }
         return repetido;
-    }}
+    }
+}
 
 
 
