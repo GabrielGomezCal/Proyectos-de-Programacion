@@ -1,10 +1,12 @@
 /*
-Gabriel Gómez Calderón
+Gabriel GÃ³mez CalderÃ³n
 Johan Stiven Gonzalez Rativa
 Omar Enrique Vivas Eyrich
  */
-public class project3 {
+public class project {
     public static void main(String[] args) {
+        //Matrix that represents the 3 players in the betting game, In the first depth we have the first player and so on, The rows represent the soccer matches in the World Cup
+        //The first and second columns represent a soccer team, the third and fourth columns represent the respective goals.
         byte marcadores[][][] =
                 {{{3, 4, 0, 3}, {5, 6, 2, 0}, {1, 2, 1, 1}, {7, 8, 2, 1}, {9, 10, 3, 0}, {14, 15, 2, 0}, {11, 12, 1, 1}, {13, 16, 3, 1},
                         {23, 24, 1, 2}, {18, 19, 3, 1}, {17, 20, 2, 2}, {21, 22, 3, 1}, {27, 28, 2, 1}, {31, 32, 2, 1},
@@ -44,10 +46,11 @@ public class project3 {
                                 {9, 16, 3, 2}, {13, 12, 3, 1}, {7, 4, 2, 1}, {17, 24, 3, 1}, {25, 31, 1, 0}, {21, 20, 2, 3}, {29, 27, 1, 1},
                                 {24, 25, 3, 3}, {3, 9, 1, 2}, {21, 29, 3, 0}, {13, 4, 1, 2}, {25, 9, 2, 2}, {4, 21, 2, 2}, {25, 21, 1, 0}, {9, 4, 2, 1}}};
 
-        String[] selecciones = {"Qatar", "Ecuador", "Senegal", "Países Bajos", "Inglaterra", "Irán", "EEUU", "Gales",
-                "Argentina", "Arabia Saudí", "México", "Polonia", "Francia", "Dinamarca", "Túnez", "Australia", "España",
-                "Alemania", "Japón", "Costa Rica", "Bélgica", "Canadá", "Marruecos", "Croacia", "Brasil", "Serbia", "Suiza",
-                "Camerún", "Portugal", "Ghana", "Uruguay", "Corea del Sur"};
+        //There is an array of strings that contain the names of the teams
+        String[] selecciones = {"Qatar", "Ecuador", "Senegal", "PaÃ­ses Bajos", "Inglaterra", "IrÃ¡n", "EEUU", "Gales",
+                "Argentina", "Arabia SaudÃ­", "MÃ©xico", "Polonia", "Francia", "Dinamarca", "TÃºnez", "Australia", "EspaÃ±a",
+                "Alemania", "JapÃ³n", "Costa Rica", "BÃ©lgica", "CanadÃ¡", "Marruecos", "Croacia", "Brasil", "Serbia", "Suiza",
+                "CamerÃºn", "Portugal", "Ghana", "Uruguay", "Corea del Sur"};
 
         short[] resultado = calcular_puntajes_todos(marcadores);
 
@@ -60,7 +63,7 @@ public class project3 {
         System.out.println("El marcador mas repetido es: "+ repetido[0]+"-"+repetido[1]);
 
     }
-
+    
     static byte determinar_ganador(byte goles_equipo_1, byte goles_equipo_2) {
 
         if (goles_equipo_1 == goles_equipo_2) {
@@ -212,6 +215,7 @@ public class project3 {
         }
         return ganador;
     }
+    
     static byte[] definir_marcador_mas_popular(byte marcadores[][][]) {
         byte[] partidos = new byte[2];
         byte[] resultado = new byte[2];
@@ -222,7 +226,8 @@ public class project3 {
         int marcador_2_1 = 0;
         int marcador_2_2 = 0;
         int marcador_3_0 = 0;
-        // por improbabilidad que las personas pongan un marcador como 3-1 o 3-2, evaluamos hasta 3-0
+        
+        // Because people are unlikely to put a score like 3-1 or 3-2, we evaluate up to 3-0
         for (int k = 1; k < marcadores.length; k++) {
             for (int i = 0; i < marcadores[0].length; i++) {
                 partidos[0] = marcadores[k][i][2];
@@ -278,8 +283,9 @@ public class project3 {
                 resultado[1] = 3; //0 3
                 if (resultado[0] == partidos[0]&&resultado[1]==partidos[1]) {
                     marcador_3_0++;
+                }
             }
-        }}
+        }
         byte repetido[]=new byte[2];
         if (marcador_0_0 > marcador_1_0 && marcador_0_0 > marcador_1_1 && marcador_0_0 > marcador_2_0 &&
                 marcador_0_0 > marcador_2_1 && marcador_0_0 > marcador_2_2 && marcador_0_0 > marcador_3_0) {
@@ -308,7 +314,8 @@ public class project3 {
             repetido[0]= 3;
         }
         return repetido;
-    }}
+    }
+}
 
 
 
